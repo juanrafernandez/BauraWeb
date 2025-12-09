@@ -8,7 +8,7 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ className = "", size = 48 }) => {
   return (
     <img
-      src="/assets/baura_logo_1024_transp.png"
+      src={`${import.meta.env.BASE_URL}assets/baura_logo_1024_transp.png`}
       alt="Baura Logo"
       width={size}
       height={size}

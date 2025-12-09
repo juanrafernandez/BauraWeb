@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             {/* Screenshot 1 (Left/Back) - Profile Screen */}
             <div className="absolute left-1/2 -translate-x-[68%] sm:-translate-x-[72%] lg:-translate-x-[75%] top-1/2 -translate-y-1/2 transform -rotate-6 z-10">
               <img
-                src="/assets/pantalla_profile.png"
+                src={`${import.meta.env.BASE_URL}assets/pantalla_profile.png`}
                 alt="Baura App - Perfil y Recomendaciones"
                 className="w-[180px] sm:w-[220px] lg:w-[260px] h-auto rounded-[32px] sm:rounded-[40px] lg:rounded-[48px] shadow-2xl"
               />
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
             {/* Screenshot 2 (Right/Front) - Collection Screen */}
             <div className="absolute left-1/2 -translate-x-[32%] sm:-translate-x-[28%] lg:-translate-x-[25%] top-1/2 -translate-y-1/2 transform rotate-6 z-20">
               <img
-                src="/assets/pantalla_mi_coleccion.png"
+                src={`${import.meta.env.BASE_URL}assets/pantalla_mi_coleccion.png`}
                 alt="Baura App - Mi Colección"
                 className="w-[180px] sm:w-[220px] lg:w-[260px] h-auto rounded-[32px] sm:rounded-[40px] lg:rounded-[48px] shadow-2xl"
               />
