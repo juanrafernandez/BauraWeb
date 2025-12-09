@@ -1,34 +1,29 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { User, Gift, BookOpen, Compass } from 'lucide-react';
 
-const features = [
-  {
-    icon: User,
-    title: 'Perfil Olfativo',
-    description: 'Cuestionario adaptativo que crea tu perfil sensorial único y te recomienda fragancias personalizadas.',
-    highlight: 'Personalizado'
-  },
-  {
-    icon: Gift,
-    title: 'Buscador de Regalos',
-    description: 'Encuentra el perfume perfecto para cualquier persona. Guarda perfiles y accede a recomendaciones al instante.',
-    highlight: 'Inteligente'
-  },
-  {
-    icon: BookOpen,
-    title: 'Mi Colección',
-    description: 'Organiza tu colección, califica fragancias probadas y mantén tu wishlist siempre actualizada.',
-    highlight: 'Organizado'
-  },
-  {
-    icon: Compass,
-    title: 'Exploración',
-    description: 'Navega el mercado global con filtros avanzados. Descubre por notas, familias o características.',
-    highlight: 'Descubrimiento'
-  }
-];
-
 const Features: React.FC = () => {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      icon: User,
+      key: 'profile'
+    },
+    {
+      icon: Gift,
+      key: 'gifts'
+    },
+    {
+      icon: BookOpen,
+      key: 'collection'
+    },
+    {
+      icon: Compass,
+      key: 'explore'
+    }
+  ];
+
   return (
     <section id="features" className="py-32 lg:py-40 bg-baura-dark scroll-mt-20 relative overflow-hidden">
       {/* Subtle gradient overlay */}
@@ -39,13 +34,13 @@ const Features: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-20 lg:mb-28">
           <p className="text-baura-gold font-sans font-medium tracking-[0.3em] text-[11px] uppercase mb-6">
-            Funcionalidades
+            {t('features.label')}
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white leading-tight max-w-3xl mx-auto mb-8">
-            Tu Viaje Aromático
+            {t('features.title')}
           </h2>
           <p className="text-white/50 font-light text-lg max-w-2xl mx-auto leading-relaxed">
-            Herramientas diseñadas para transformar cómo descubres, organizas y disfrutas las fragancias.
+            {t('features.subtitle')}
           </p>
         </div>
 
@@ -64,13 +59,15 @@ const Features: React.FC = () => {
               {/* Content */}
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <h3 className="text-2xl font-serif text-white">{feature.title}</h3>
+                  <h3 className="text-2xl font-serif text-white">
+                    {t(`features.${feature.key}.title`)}
+                  </h3>
                   <span className="px-3 py-1 bg-baura-gold/10 rounded-full text-[10px] text-baura-gold uppercase tracking-wider">
-                    {feature.highlight}
+                    {t(`features.${feature.key}.highlight`)}
                   </span>
                 </div>
                 <p className="text-white/50 font-light leading-relaxed">
-                  {feature.description}
+                  {t(`features.${feature.key}.description`)}
                 </p>
               </div>
 
@@ -79,7 +76,6 @@ const Features: React.FC = () => {
             </div>
           ))}
         </div>
-
 
       </div>
     </section>

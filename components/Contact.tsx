@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Mail, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import Logo from './Logo';
@@ -9,6 +10,7 @@ const EMAILJS_TEMPLATE_ID = 'template_qf0thfm';
 const EMAILJS_PUBLIC_KEY = 'Rhjc_c7xjqOKHvNFH';
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,7 +20,7 @@ const Contact: React.FC = () => {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
   const openMailClient = () => {
-    const mailtoLink = `mailto:business@baura.app?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Nombre: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
+    const mailtoLink = `mailto:business@baura.app?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`${t('contact.form.name')}: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
     window.location.href = mailtoLink;
   };
 
@@ -43,7 +45,6 @@ const Contact: React.FC = () => {
     } catch (error) {
       console.error('EmailJS error:', error);
       setStatus('error');
-      // Fallback: abrir cliente de correo
       openMailClient();
     }
   };
@@ -70,13 +71,13 @@ const Contact: React.FC = () => {
 
             {/* Tagline */}
             <p className="text-white/50 font-light text-lg leading-relaxed max-w-md">
-              Tu guía personal en el mundo de las fragancias. Descubre tu esencia, define tu aura.
+              {t('contact.tagline')}
             </p>
 
             {/* Contact info */}
             <div className="space-y-4">
               <p className="text-[11px] text-white/40 uppercase tracking-[0.2em]">
-                Contacto
+                {t('contact.contactLabel')}
               </p>
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-baura-gold" />
@@ -91,10 +92,10 @@ const Contact: React.FC = () => {
           <div className="space-y-8">
             <div>
               <p className="text-[11px] text-white/40 uppercase tracking-[0.2em] mb-2">
-                Colaboraciones y Negocios
+                {t('contact.businessLabel')}
               </p>
               <p className="text-white/60 font-light text-sm">
-                ¿Interesado en publicidad o colaboraciones? Escríbenos.
+                {t('contact.businessSubtitle')}
               </p>
             </div>
 
@@ -102,7 +103,7 @@ const Contact: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  placeholder="Nombre"
+                  placeholder={t('contact.form.name')}
                   value={formData.name}
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
                   className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-baura-gold/50 transition-colors duration-300"
@@ -110,7 +111,7 @@ const Contact: React.FC = () => {
                 />
                 <input
                   type="email"
-                  placeholder="Email"
+                  placeholder={t('contact.form.email')}
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
                   className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-baura-gold/50 transition-colors duration-300"
@@ -119,14 +120,14 @@ const Contact: React.FC = () => {
               </div>
               <input
                 type="text"
-                placeholder="Asunto"
+                placeholder={t('contact.form.subject')}
                 value={formData.subject}
                 onChange={(e) => setFormData({...formData, subject: e.target.value})}
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-baura-gold/50 transition-colors duration-300"
                 required
               />
               <textarea
-                placeholder="Tu mensaje"
+                placeholder={t('contact.form.message')}
                 rows={4}
                 value={formData.message}
                 onChange={(e) => setFormData({...formData, message: e.target.value})}
@@ -141,28 +142,28 @@ const Contact: React.FC = () => {
                 {status === 'sending' ? (
                   <>
                     <Loader2 size={16} className="animate-spin" />
-                    Enviando...
+                    {t('contact.form.sending')}
                   </>
                 ) : status === 'success' ? (
                   <>
                     <CheckCircle size={16} />
-                    Enviado
+                    {t('contact.form.sent')}
                   </>
                 ) : (
                   <>
                     <Send size={16} />
-                    Enviar mensaje
+                    {t('contact.form.send')}
                   </>
                 )}
               </button>
               {status === 'success' && (
                 <p className="text-green-400 text-sm mt-3">
-                  Mensaje enviado correctamente. Te responderemos pronto.
+                  {t('contact.form.successMessage')}
                 </p>
               )}
               {status === 'error' && (
                 <p className="text-yellow-400 text-sm mt-3">
-                  Se abrirá tu cliente de correo como alternativa.
+                  {t('contact.form.errorMessage')}
                 </p>
               )}
             </form>
@@ -175,10 +176,10 @@ const Contact: React.FC = () => {
 
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-white/30">
-          <p>&copy; {new Date().getFullYear()} Baura. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Baura. {t('contact.footer.rights')}</p>
           <div className="flex gap-6">
-            <Link to="/privacidad" className="hover:text-white/60 transition-colors">Privacidad</Link>
-            <Link to="/terminos" className="hover:text-white/60 transition-colors">Términos</Link>
+            <Link to="/privacidad" className="hover:text-white/60 transition-colors">{t('contact.footer.privacy')}</Link>
+            <Link to="/terminos" className="hover:text-white/60 transition-colors">{t('contact.footer.terms')}</Link>
           </div>
         </div>
 

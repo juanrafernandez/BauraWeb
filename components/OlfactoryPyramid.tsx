@@ -1,33 +1,35 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Sparkles, Heart, Gem } from 'lucide-react';
 
 const OlfactoryPyramid: React.FC = () => {
+  const { t } = useTranslation();
   const [activeLayer, setActiveLayer] = useState<number>(0);
 
   const layers = [
     {
-      name: 'Salida',
-      subtitle: 'Notas de Salida',
+      name: t('pyramid.top.name'),
+      subtitle: t('pyramid.top.subtitle'),
       icon: Sparkles,
-      description: 'La primera impresión. Aromas frescos y volátiles como cítricos y acuáticos que capturan la atención en los primeros 15-30 minutos.',
+      description: t('pyramid.top.description'),
       notes: ['Bergamota', 'Limón', 'Pomelo', 'Menta'],
-      duration: '15-30 min'
+      duration: t('pyramid.top.duration')
     },
     {
-      name: 'Corazón',
-      subtitle: 'Notas de Corazón',
+      name: t('pyramid.heart.name'),
+      subtitle: t('pyramid.heart.subtitle'),
       icon: Heart,
-      description: 'El alma de la fragancia. Aromas florales, verdes y afrutados que emergen cuando las notas de salida se desvanecen.',
+      description: t('pyramid.heart.description'),
       notes: ['Rosa', 'Jazmín', 'Lavanda', 'Geranio'],
-      duration: '2-4 horas'
+      duration: t('pyramid.heart.duration')
     },
     {
-      name: 'Fondo',
-      subtitle: 'Notas de Fondo',
+      name: t('pyramid.base.name'),
+      subtitle: t('pyramid.base.subtitle'),
       icon: Gem,
-      description: 'La firma duradera. Notas profundas de maderas, ámbar y especias que permanecen durante horas, definiendo el carácter final.',
+      description: t('pyramid.base.description'),
       notes: ['Sándalo', 'Vainilla', 'Ámbar', 'Almizcle'],
-      duration: '6+ horas'
+      duration: t('pyramid.base.duration')
     }
   ];
 
@@ -41,13 +43,13 @@ const OlfactoryPyramid: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-20 lg:mb-28">
           <p className="text-baura-gold font-sans font-medium tracking-[0.3em] text-[11px] uppercase mb-6">
-            Ciencia Olfativa
+            {t('pyramid.label')}
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-baura-dark leading-tight max-w-3xl mx-auto mb-8">
-            La Pirámide Olfativa
+            {t('pyramid.title')}
           </h2>
           <p className="text-baura-text-secondary font-light text-lg max-w-2xl mx-auto leading-relaxed">
-            Cada fragancia se compone de tres capas que se revelan gradualmente, creando una experiencia sensorial que evoluciona con el tiempo.
+            {t('pyramid.subtitle')}
           </p>
         </div>
 
@@ -74,7 +76,7 @@ const OlfactoryPyramid: React.FC = () => {
                     textAnchor="middle"
                     className={`font-sans text-[10px] font-medium tracking-[0.15em] uppercase pointer-events-none transition-all duration-500 ${activeLayer === 0 ? 'fill-white' : 'fill-baura-gold'}`}
                   >
-                    SALIDA
+                    {layers[0].name.toUpperCase()}
                   </text>
                 </g>
 
@@ -95,7 +97,7 @@ const OlfactoryPyramid: React.FC = () => {
                     textAnchor="middle"
                     className={`font-sans text-[11px] font-medium tracking-[0.15em] uppercase pointer-events-none transition-all duration-500 ${activeLayer === 1 ? 'fill-white' : 'fill-baura-gold'}`}
                   >
-                    CORAZÓN
+                    {layers[1].name.toUpperCase()}
                   </text>
                 </g>
 
@@ -116,7 +118,7 @@ const OlfactoryPyramid: React.FC = () => {
                     textAnchor="middle"
                     className={`font-sans text-[12px] font-medium tracking-[0.15em] uppercase pointer-events-none transition-all duration-500 ${activeLayer === 2 ? 'fill-white' : 'fill-baura-gold'}`}
                   >
-                    FONDO
+                    {layers[2].name.toUpperCase()}
                   </text>
                 </g>
               </svg>
@@ -124,7 +126,7 @@ const OlfactoryPyramid: React.FC = () => {
             </div>
 
             <p className="text-[11px] text-baura-text-tertiary uppercase tracking-[0.2em] mt-8">
-              Toca para explorar
+              {t('pyramid.tapToExplore')}
             </p>
           </div>
 
@@ -156,7 +158,7 @@ const OlfactoryPyramid: React.FC = () => {
                     {/* Sample Notes */}
                     <div>
                       <p className="text-[10px] text-baura-text-tertiary uppercase tracking-[0.2em] mb-4">
-                        Notas características (ejemplo)
+                        {t('pyramid.characteristicNotes')}
                       </p>
                       <div className="flex flex-wrap gap-3">
                         {layer.notes.map((note, i) => (

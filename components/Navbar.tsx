@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar: React.FC = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -15,10 +18,10 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Filosofía', href: '#pyramid' },
-    { name: 'Familias', href: '#families' },
-    { name: 'App', href: '#features' },
-    { name: 'Contacto', href: '#contact' },
+    { name: t('nav.philosophy'), href: '#pyramid' },
+    { name: t('nav.families'), href: '#families' },
+    { name: t('nav.app'), href: '#features' },
+    { name: t('nav.contact'), href: '#contact' },
   ];
 
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -59,10 +62,10 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
-                key={link.name}
+                key={link.href}
                 href={link.href}
                 onClick={(e) => handleSmoothScroll(e, link.href)}
                 className={`font-sans text-[13px] tracking-wide transition-colors duration-300 hover:text-baura-gold cursor-pointer ${scrolled ? 'text-baura-text-secondary' : 'text-baura-dark/70'}`}
@@ -70,20 +73,22 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
+            <LanguageSelector variant="light" />
             <a
               href="#"
-              className="ml-4 px-5 py-2.5 rounded-xl text-[13px] font-medium transition-all duration-300 bg-baura-gold text-white hover:bg-baura-gold-dark"
+              className="ml-2 px-5 py-2.5 rounded-xl text-[13px] font-medium transition-all duration-300 bg-baura-gold text-white hover:bg-baura-gold-dark"
             >
-              Descargar
+              {t('nav.download')}
             </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-4">
+            <LanguageSelector variant="light" />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 transition-colors duration-300 ${scrolled ? 'text-baura-dark' : 'text-baura-dark'}`}
-              aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
+              aria-label={isOpen ? 'Close menu' : 'Open menu'}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -96,7 +101,7 @@ const Navbar: React.FC = () => {
         <div className="px-6 py-6 space-y-4">
           {navLinks.map((link) => (
             <a
-              key={link.name}
+              key={link.href}
               href={link.href}
               onClick={(e) => handleSmoothScroll(e, link.href)}
               className="block text-baura-dark text-lg font-serif py-2 hover:text-baura-gold transition-colors"
@@ -108,7 +113,7 @@ const Navbar: React.FC = () => {
             href="#"
             className="block w-full text-center bg-baura-gold text-white py-3 rounded-xl font-medium mt-4"
           >
-            Descargar App
+            {t('nav.download')} App
           </a>
         </div>
       </div>

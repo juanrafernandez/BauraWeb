@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "philosophy": "Philosophie",
+    "families": "Familles",
+    "app": "App",
+    "contact": "Contact",
+    "download": "Télécharger"
+  },
+  "hero": {
+    "welcome": "Bienvenue chez Baura",
+    "title1": "Capturez",
+    "title2": "l'Essence",
+    "subtitle": "Votre guide personnel dans le monde des fragrances. Découvrez, explorez et définissez votre signature olfactive unique.",
+    "downloadOn": "Télécharger sur",
+    "appStore": "App Store",
+    "availableOn": "Disponible sur",
+    "googlePlay": "Google Play",
+    "discoverMore": "Découvrez plus"
+  },
+  "story": {
+    "label": "La Philosophie",
+    "title": "Le parfum est le souvenir qui défie l'oubli",
+    "ba": {
+      "title": "Ba",
+      "origin": "Égyptien Ancien · L'Âme",
+      "description": "La partie de l'esprit qui voyage entre les mondes, représentant l'essence unique et irremplaçable de chaque individu."
+    },
+    "aura": {
+      "title": "Aura",
+      "origin": "Latin · La Brise",
+      "description": "L'atmosphère distinctive qui émane d'une personne, son énergie invisible qui laisse une empreinte sur ceux qui la perçoivent."
+    },
+    "paragraph1": "Pour les anciens Égyptiens, les fragrances étaient des véhicules sacrés pour le voyage vers l'au-delà. Ils croyaient que le parfum avait le pouvoir de transcender le royaume physique.",
+    "paragraph2": "est né de cette vérité intemporelle : la fragrance est l'architecte de la mémoire. Un parfum familier peut vous transporter instantanément vers un moment, un lieu ou une personne spécifique.",
+    "paragraph3": "Notre mission est de vous aider à définir cette essence. Concevoir la signature olfactive qui capture votre âme et projette votre énergie, vous assurant de rester inoubliable.",
+    "quote": "\"Définissez votre essence. Devenez immortel.\""
+  },
+  "pyramid": {
+    "label": "Science Olfactive",
+    "title": "La Pyramide Olfactive",
+    "subtitle": "Chaque fragrance se compose de trois couches qui se révèlent progressivement, créant une expérience sensorielle qui évolue avec le temps.",
+    "tapToExplore": "Touchez pour explorer",
+    "top": {
+      "name": "Tête",
+      "subtitle": "Notes de Tête",
+      "description": "La première impression. Des arômes frais et volatils comme les agrumes et les notes aquatiques qui captent l'attention dans les 15-30 premières minutes.",
+      "duration": "15-30 min"
+    },
+    "heart": {
+      "name": "Cœur",
+      "subtitle": "Notes de Cœur",
+      "description": "L'âme de la fragrance. Des arômes floraux, verts et fruités qui émergent lorsque les notes de tête s'estompent.",
+      "duration": "2-4 heures"
+    },
+    "base": {
+      "name": "Fond",
+      "subtitle": "Notes de Fond",
+      "description": "La signature durable. Des notes profondes de bois, d'ambre et d'épices qui persistent pendant des heures, définissant le caractère final.",
+      "duration": "6+ heures"
+    },
+    "characteristicNotes": "Notes caractéristiques (exemple)"
+  },
+  "families": {
+    "label": "Les 9 Familles",
+    "title": "Familles Olfactives",
+    "subtitle": "Chaque famille olfactive a une personnalité unique. Découvrez celle qui résonne avec votre essence.",
+    "exploreAll": "Explorez les 9 familles olfactives complètes dans l'app",
+    "citrus": {
+      "name": "Agrumes",
+      "description": "Fragrances fraîches, énergisantes et légères à base d'agrumes.",
+      "intensity": "Légère",
+      "season": "Printemps · Été"
+    },
+    "floral": {
+      "name": "Floraux",
+      "description": "Parfums romantiques et délicats dominés par des fleurs fraîches.",
+      "intensity": "Moyenne",
+      "season": "Printemps · Été"
+    },
+    "fruity": {
+      "name": "Fruités",
+      "description": "Fragrances douces et juteuses aux arômes de fruits frais et mûrs.",
+      "intensity": "Moyenne",
+      "season": "Printemps · Été"
+    },
+    "woody": {
+      "name": "Boisés",
+      "description": "Parfums chauds et sophistiqués aux notes de bois secs et résineux.",
+      "intensity": "Haute",
+      "season": "Automne · Hiver"
+    },
+    "oriental": {
+      "name": "Orientaux",
+      "description": "Fragrances intenses et exotiques aux touches chaudes et épicées.",
+      "intensity": "Haute",
+      "season": "Automne · Hiver"
+    },
+    "spicy": {
+      "name": "Épicés",
+      "description": "Parfums chauds et piquants aux arômes d'épices exotiques.",
+      "intensity": "Haute",
+      "season": "Automne · Hiver"
+    },
+    "aquatic": {
+      "name": "Aquatiques",
+      "description": "Fragrances fraîches et légères évoquant la brise marine.",
+      "intensity": "Légère",
+      "season": "Été · Printemps"
+    },
+    "green": {
+      "name": "Verts",
+      "description": "Arômes frais et herbacés rappelant les feuilles fraîches et les jardins.",
+      "intensity": "Moyenne",
+      "season": "Printemps · Été"
+    },
+    "gourmand": {
+      "name": "Gourmand",
+      "description": "Parfums doux et chauds inspirés des desserts et des aliments délicieux.",
+      "intensity": "Moyenne-Haute",
+      "season": "Automne · Hiver"
+    }
+  },
+  "features": {
+    "label": "Fonctionnalités",
+    "title": "Votre Voyage Aromatique",
+    "subtitle": "Des outils conçus pour transformer la façon dont vous découvrez, organisez et appréciez les fragrances.",
+    "profile": {
+      "title": "Profil Olfactif",
+      "description": "Questionnaire adaptatif qui crée votre profil sensoriel unique et vous recommande des fragrances personnalisées.",
+      "highlight": "Personnalisé"
+    },
+    "gifts": {
+      "title": "Chercheur de Cadeaux",
+      "description": "Trouvez le parfum parfait pour n'importe qui. Enregistrez des profils et accédez à des recommandations instantanées.",
+      "highlight": "Intelligent"
+    },
+    "collection": {
+      "title": "Ma Collection",
+      "description": "Organisez votre collection, notez les fragrances essayées et gardez votre liste de souhaits toujours à jour.",
+      "highlight": "Organisé"
+    },
+    "explore": {
+      "title": "Exploration",
+      "description": "Naviguez sur le marché mondial avec des filtres avancés. Découvrez par notes, familles ou caractéristiques.",
+      "highlight": "Découverte"
+    }
+  },
+  "contact": {
+    "tagline": "Votre guide personnel dans le monde des fragrances. Découvrez votre essence, définissez votre aura.",
+    "contactLabel": "Contact",
+    "businessLabel": "Collaborations et Affaires",
+    "businessSubtitle": "Intéressé par la publicité ou les collaborations ? Écrivez-nous.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Votre message",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "sent": "Envoyé",
+      "successMessage": "Message envoyé avec succès. Nous vous répondrons bientôt.",
+      "errorMessage": "Votre client de messagerie s'ouvrira comme alternative."
+    },
+    "footer": {
+      "rights": "Tous droits réservés.",
+      "privacy": "Confidentialité",
+      "terms": "Conditions"
+    }
+  },
+  "legal": {
+    "backToHome": "Retour",
+    "lastUpdated": "Dernière mise à jour",
+    "footerRights": "Tous droits réservés."
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "section1": {
+      "title": "1. Responsable du traitement",
+      "content": "Baura est un projet développé par un particulier résidant en Espagne. Pour toute question relative à la confidentialité, vous pouvez nous contacter à :"
+    },
+    "section2": {
+      "title": "2. Données que nous collectons",
+      "intro": "À travers ce site web et l'application Baura, nous pouvons collecter :",
+      "item1": "<strong>Données de contact :</strong> Nom et email lorsque vous nous écrivez via le formulaire de contact.",
+      "item2": "<strong>Données d'utilisation de l'app :</strong> Préférences olfactives, collection de parfums et évaluations que vous entrez volontairement dans l'application.",
+      "item3": "<strong>Données techniques :</strong> Informations anonymes sur l'appareil et l'utilisation de l'application pour améliorer le service."
+    },
+    "section3": {
+      "title": "3. Finalité du traitement",
+      "intro": "Nous utilisons vos données pour :",
+      "item1": "Répondre à vos demandes et requêtes de contact.",
+      "item2": "Vous fournir des recommandations de fragrances personnalisées.",
+      "item3": "Améliorer l'application et l'expérience utilisateur.",
+      "item4": "Respecter les obligations légales si nécessaire."
+    },
+    "section4": {
+      "title": "4. Base juridique",
+      "content": "Le traitement de vos données est basé sur votre consentement lors de l'utilisation de l'application et de l'envoi de communications, ainsi que sur notre intérêt légitime à améliorer le service."
+    },
+    "section5": {
+      "title": "5. Conservation des données",
+      "content": "Nous conservons vos données tant que vous maintenez un compte actif dans l'application ou tant que nécessaire pour répondre à vos demandes. Les données de contact sont supprimées 12 mois après la dernière communication."
+    },
+    "section6": {
+      "title": "6. Partage des données",
+      "intro": "<strong>Nous ne vendons ni ne partageons vos données personnelles avec des tiers</strong> à des fins commerciales. Nous pouvons uniquement partager des informations avec :",
+      "item1": "Fournisseurs de services techniques nécessaires au fonctionnement de l'app (hébergement, email).",
+      "item2": "Autorités publiques en cas d'obligation légale."
+    },
+    "section7": {
+      "title": "7. Vos droits",
+      "intro": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous avez le droit de :",
+      "item1": "<strong>Accès :</strong> Connaître les données que nous avons sur vous.",
+      "item2": "<strong>Rectification :</strong> Corriger les données inexactes.",
+      "item3": "<strong>Suppression :</strong> Demander la suppression de vos données.",
+      "item4": "<strong>Portabilité :</strong> Recevoir vos données dans un format structuré.",
+      "item5": "<strong>Opposition :</strong> Vous opposer au traitement de vos données.",
+      "item6": "<strong>Limitation :</strong> Demander la limitation du traitement.",
+      "outro": "Pour exercer ces droits, écrivez-nous à",
+      "responseTime": "Nous répondrons dans un délai maximum de 30 jours."
+    },
+    "section8": {
+      "title": "8. Sécurité",
+      "content": "Nous mettons en œuvre des mesures techniques et organisationnelles raisonnables pour protéger vos données contre l'accès non autorisé, la perte ou l'altération. Cependant, aucun système n'est entièrement sécurisé et nous ne pouvons garantir la sécurité absolue des informations."
+    },
+    "section9": {
+      "title": "9. Modifications de cette politique",
+      "content": "Nous pouvons mettre à jour cette politique occasionnellement. Nous vous informerons des changements significatifs via l'application ou par email. Nous vous recommandons de consulter cette page périodiquement."
+    },
+    "section10": {
+      "title": "10. Contact et réclamations",
+      "contactIntro": "Pour toute question sur la confidentialité :",
+      "claimIntro": "Si vous estimez que vos droits n'ont pas été correctement respectés, vous pouvez déposer une réclamation auprès de l'Agence Espagnole de Protection des Données (AEPD) :"
+    }
+  },
+  "terms": {
+    "title": "Conditions d'Utilisation",
+    "section1": {
+      "title": "1. Acceptation des conditions",
+      "content": "En accédant et en utilisant l'application Baura et ce site web, vous acceptez ces conditions d'utilisation. Si vous n'êtes pas d'accord avec une partie de ces conditions, veuillez ne pas utiliser nos services."
+    },
+    "section2": {
+      "title": "2. Description du service",
+      "intro": "Baura est une application gratuite qui vous aide à découvrir et organiser les fragrances. Le service comprend :",
+      "item1": "Recommandations de parfums personnalisées basées sur vos préférences.",
+      "item2": "Gestion de votre collection personnelle de fragrances.",
+      "item3": "Informations sur les familles olfactives et les notes.",
+      "item4": "Outils pour explorer le monde de la parfumerie."
+    },
+    "section3": {
+      "title": "3. Nature du projet",
+      "content": "Baura est un projet personnel développé par un particulier en Espagne. <strong>Ce n'est pas une entreprise ni une entité commerciale.</strong> L'application est offerte gratuitement et à but non lucratif, comme outil pour les passionnés de parfumerie."
+    },
+    "section4": {
+      "title": "4. Utilisation autorisée",
+      "intro": "Vous vous engagez à utiliser Baura de manière responsable et légale. Il est interdit de :",
+      "item1": "Utiliser le service à des fins illégales ou non autorisées.",
+      "item2": "Tenter d'accéder à des systèmes ou données non autorisés.",
+      "item3": "Copier, modifier ou distribuer le contenu sans autorisation.",
+      "item4": "Introduire des virus, malware ou code malveillant.",
+      "item5": "Interférer avec le fonctionnement normal du service."
+    },
+    "section5": {
+      "title": "5. Contenu et recommandations",
+      "paragraph1": "Les recommandations de fragrances sont générées automatiquement en fonction de vos préférences et algorithmes. <strong>Elles sont indicatives et ne constituent pas un conseil professionnel.</strong>",
+      "paragraph2": "Les informations sur les parfums (notes, familles, etc.) sont collectées à partir de sources publiques et peuvent contenir des inexactitudes. Nous ne garantissons pas l'exactitude complète de ces données."
+    },
+    "section6": {
+      "title": "6. Propriété intellectuelle",
+      "paragraph1": "Les noms, logos et marques de parfums mentionnés dans l'application appartiennent à leurs propriétaires respectifs. Baura n'a aucune affiliation avec aucune marque de parfum.",
+      "paragraph2": "Le design, le code et le contenu original de Baura sont protégés par le droit d'auteur."
+    },
+    "section7": {
+      "title": "7. Limitation de responsabilité",
+      "intro": "<strong>L'application est fournie « telle quelle » et « selon disponibilité »</strong>, sans garantie d'aucune sorte, expresse ou implicite.",
+      "listIntro": "Dans la mesure maximale autorisée par la loi, nous ne serons pas responsables de :",
+      "item1": "Dommages directs, indirects, accessoires ou consécutifs découlant de l'utilisation de l'app.",
+      "item2": "Perte de données ou d'informations stockées dans l'application.",
+      "item3": "Interruptions de service ou erreurs techniques.",
+      "item4": "Décisions d'achat basées sur les recommandations de l'app.",
+      "item5": "Réactions allergiques ou indésirables aux fragrances recommandées."
+    },
+    "section8": {
+      "title": "8. Disponibilité du service",
+      "content": "Nous nous efforçons de maintenir le service disponible, mais nous ne garantissons pas un fonctionnement ininterrompu. Nous pouvons modifier, suspendre ou interrompre le service à tout moment sans préavis."
+    },
+    "section9": {
+      "title": "9. Modifications",
+      "content": "Nous nous réservons le droit de modifier ces conditions à tout moment. Les changements prendront effet après publication. L'utilisation continue du service après les changements implique l'acceptation des nouvelles conditions."
+    },
+    "section10": {
+      "title": "10. Loi applicable",
+      "content": "Ces conditions sont régies par la loi espagnole. Pour tout litige, les parties se soumettent aux tribunaux d'Espagne."
+    },
+    "section11": {
+      "title": "11. Contact",
+      "content": "Pour toute question concernant ces conditions :"
+    }
+  }
+}
