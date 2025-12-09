@@ -109,4 +109,25 @@ Los enlaces del menú usan smooth scroll a las secciones:
 
 ## Despliegue
 
-La carpeta `dist/` contiene los archivos estáticos listos para desplegar en cualquier hosting (Vercel, Netlify, GitHub Pages, etc.)
+**Producción:** https://baura.app
+
+El sitio está desplegado en **GitHub Pages** con deploy automático:
+- Cada push a `main` dispara el workflow en `.github/workflows/deploy.yml`
+- El dominio `baura.app` está configurado en Arsys con registros A apuntando a GitHub
+- HTTPS está habilitado
+
+### DNS en Arsys
+```
+baura.app       A       185.199.108.153
+baura.app       A       185.199.109.153
+baura.app       A       185.199.110.153
+baura.app       A       185.199.111.153
+www.baura.app   CNAME   juanrafernandez.github.io
+```
+
+## Tareas pendientes
+
+- [ ] **Botones de descarga:** Actualizar enlaces en `Hero.tsx` cuando las apps estén publicadas:
+  - App Store: cambiar `href="#"` por URL real de iOS
+  - Google Play: cambiar `href="#"` por URL real de Android
+- [ ] **Botón "Descargar" en Navbar:** Actualizar en `Navbar.tsx` con enlace a stores
