@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "philosophy": "Philosophy",
+    "families": "Families",
+    "app": "App",
+    "contact": "Contact",
+    "download": "Download"
+  },
+  "hero": {
+    "welcome": "Welcome to Baura",
+    "title1": "Capture the",
+    "title2": "Essence",
+    "subtitle": "Your personal guide in the world of fragrances. Discover, explore and define your unique olfactory signature.",
+    "downloadOn": "Download on",
+    "appStore": "App Store",
+    "availableOn": "Available on",
+    "googlePlay": "Google Play",
+    "discoverMore": "Discover more"
+  },
+  "story": {
+    "label": "The Philosophy",
+    "title": "Scent is the memory that defies oblivion",
+    "ba": {
+      "title": "Ba",
+      "origin": "Ancient Egyptian · The Soul",
+      "description": "The part of the spirit that travels between worlds, representing the unique and unrepeatable essence of each individual."
+    },
+    "aura": {
+      "title": "Aura",
+      "origin": "Latin · The Breeze",
+      "description": "The distinctive atmosphere that emanates from a person, their invisible energy that leaves a mark on those who perceive it."
+    },
+    "paragraph1": "For the ancient Egyptians, fragrances were sacred vehicles for the journey to the afterlife. They believed that scent had the power to transcend the physical realm.",
+    "paragraph2": "was born from this timeless truth: fragrance is the architect of memory. A familiar scent can instantly transport you to a specific moment, place, or person.",
+    "paragraph3": "Our mission is to help you define that essence. To design the olfactory signature that captures your soul and projects your energy, ensuring you remain unforgettable.",
+    "quote": "\"Define your essence. Become immortal.\""
+  },
+  "pyramid": {
+    "label": "Olfactory Science",
+    "title": "The Olfactory Pyramid",
+    "subtitle": "Each fragrance is composed of three layers that gradually reveal themselves, creating a sensory experience that evolves over time.",
+    "tapToExplore": "Tap to explore",
+    "top": {
+      "name": "Top",
+      "subtitle": "Top Notes",
+      "description": "The first impression. Fresh and volatile aromas like citrus and aquatic notes that capture attention in the first 15-30 minutes.",
+      "duration": "15-30 min"
+    },
+    "heart": {
+      "name": "Heart",
+      "subtitle": "Heart Notes",
+      "description": "The soul of the fragrance. Floral, green and fruity aromas that emerge when the top notes fade.",
+      "duration": "2-4 hours"
+    },
+    "base": {
+      "name": "Base",
+      "subtitle": "Base Notes",
+      "description": "The lasting signature. Deep notes of woods, amber and spices that linger for hours, defining the final character.",
+      "duration": "6+ hours"
+    },
+    "characteristicNotes": "Characteristic notes (example)"
+  },
+  "families": {
+    "label": "The 9 Families",
+    "title": "Olfactory Families",
+    "subtitle": "Each olfactory family has a unique personality. Discover which one resonates with your essence.",
+    "exploreAll": "Explore all 9 olfactory families in the app",
+    "citrus": {
+      "name": "Citrus",
+      "description": "Fresh, energizing and light fragrances based on citrus fruits.",
+      "intensity": "Light",
+      "season": "Spring · Summer"
+    },
+    "floral": {
+      "name": "Floral",
+      "description": "Romantic and delicate perfumes dominated by fresh flowers.",
+      "intensity": "Medium",
+      "season": "Spring · Summer"
+    },
+    "fruity": {
+      "name": "Fruity",
+      "description": "Sweet and juicy fragrances with fresh and ripe fruit aromas.",
+      "intensity": "Medium",
+      "season": "Spring · Summer"
+    },
+    "woody": {
+      "name": "Woody",
+      "description": "Warm and sophisticated perfumes with dry and resinous wood notes.",
+      "intensity": "High",
+      "season": "Autumn · Winter"
+    },
+    "oriental": {
+      "name": "Oriental",
+      "description": "Intense and exotic fragrances with warm and spicy touches.",
+      "intensity": "High",
+      "season": "Autumn · Winter"
+    },
+    "spicy": {
+      "name": "Spicy",
+      "description": "Warm and piquant perfumes with exotic spice aromas.",
+      "intensity": "High",
+      "season": "Autumn · Winter"
+    },
+    "aquatic": {
+      "name": "Aquatic",
+      "description": "Fresh and light fragrances that evoke the sea breeze.",
+      "intensity": "Light",
+      "season": "Summer · Spring"
+    },
+    "green": {
+      "name": "Green",
+      "description": "Fresh and herbal aromas reminiscent of fresh leaves and gardens.",
+      "intensity": "Medium",
+      "season": "Spring · Summer"
+    },
+    "gourmand": {
+      "name": "Gourmand",
+      "description": "Sweet and warm perfumes inspired by desserts and delicious foods.",
+      "intensity": "Medium-High",
+      "season": "Autumn · Winter"
+    }
+  },
+  "features": {
+    "label": "Features",
+    "title": "Your Aromatic Journey",
+    "subtitle": "Tools designed to transform how you discover, organize and enjoy fragrances.",
+    "profile": {
+      "title": "Olfactory Profile",
+      "description": "Adaptive questionnaire that creates your unique sensory profile and recommends personalized fragrances.",
+      "highlight": "Personalized"
+    },
+    "gifts": {
+      "title": "Gift Finder",
+      "description": "Find the perfect perfume for anyone. Save profiles and access instant recommendations.",
+      "highlight": "Smart"
+    },
+    "collection": {
+      "title": "My Collection",
+      "description": "Organize your collection, rate tried fragrances and keep your wishlist always updated.",
+      "highlight": "Organized"
+    },
+    "explore": {
+      "title": "Exploration",
+      "description": "Navigate the global market with advanced filters. Discover by notes, families or characteristics.",
+      "highlight": "Discovery"
+    }
+  },
+  "contact": {
+    "tagline": "Your personal guide in the world of fragrances. Discover your essence, define your aura.",
+    "contactLabel": "Contact",
+    "businessLabel": "Collaborations & Business",
+    "businessSubtitle": "Interested in advertising or collaborations? Write to us.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Your message",
+      "send": "Send message",
+      "sending": "Sending...",
+      "sent": "Sent",
+      "successMessage": "Message sent successfully. We'll get back to you soon.",
+      "errorMessage": "Your email client will open as an alternative."
+    },
+    "footer": {
+      "rights": "All rights reserved.",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "legal": {
+    "backToHome": "Back",
+    "lastUpdated": "Last updated",
+    "footerRights": "All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "section1": {
+      "title": "1. Data Controller",
+      "content": "Baura is a project developed by an individual residing in Spain. For any privacy-related inquiries, you can contact us at:"
+    },
+    "section2": {
+      "title": "2. Data We Collect",
+      "intro": "Through this website and the Baura application, we may collect:",
+      "item1": "<strong>Contact data:</strong> Name and email when you write to us through the contact form.",
+      "item2": "<strong>App usage data:</strong> Olfactory preferences, perfume collection and ratings that you voluntarily enter in the application.",
+      "item3": "<strong>Technical data:</strong> Anonymous information about the device and application usage to improve the service."
+    },
+    "section3": {
+      "title": "3. Purpose of Processing",
+      "intro": "We use your data to:",
+      "item1": "Respond to your inquiries and contact requests.",
+      "item2": "Provide you with personalized fragrance recommendations.",
+      "item3": "Improve the application and user experience.",
+      "item4": "Comply with legal obligations when necessary."
+    },
+    "section4": {
+      "title": "4. Legal Basis",
+      "content": "The processing of your data is based on your consent when using the application and sending us communications, as well as our legitimate interest in improving the service."
+    },
+    "section5": {
+      "title": "5. Data Retention",
+      "content": "We retain your data while you maintain an active account in the application or while necessary to respond to your inquiries. Contact data is deleted 12 months after the last communication."
+    },
+    "section6": {
+      "title": "6. Data Sharing",
+      "intro": "<strong>We do not sell or share your personal data with third parties</strong> for commercial purposes. We may only share information with:",
+      "item1": "Technical service providers necessary for the app's operation (hosting, email).",
+      "item2": "Public authorities when there is a legal obligation."
+    },
+    "section7": {
+      "title": "7. Your Rights",
+      "intro": "In accordance with the General Data Protection Regulation (GDPR), you have the right to:",
+      "item1": "<strong>Access:</strong> Know what data we have about you.",
+      "item2": "<strong>Rectification:</strong> Correct inaccurate data.",
+      "item3": "<strong>Erasure:</strong> Request the deletion of your data.",
+      "item4": "<strong>Portability:</strong> Receive your data in a structured format.",
+      "item5": "<strong>Objection:</strong> Object to the processing of your data.",
+      "item6": "<strong>Restriction:</strong> Request the restriction of processing.",
+      "outro": "To exercise these rights, write to us at",
+      "responseTime": "We will respond within a maximum of 30 days."
+    },
+    "section8": {
+      "title": "8. Security",
+      "content": "We implement reasonable technical and organizational measures to protect your data against unauthorized access, loss or alteration. However, no system is completely secure and we cannot guarantee the absolute security of information."
+    },
+    "section9": {
+      "title": "9. Changes to This Policy",
+      "content": "We may update this policy occasionally. We will notify you of significant changes through the application or by email. We recommend reviewing this page periodically."
+    },
+    "section10": {
+      "title": "10. Contact and Complaints",
+      "contactIntro": "For any privacy inquiries:",
+      "claimIntro": "If you believe your rights have not been properly addressed, you can file a complaint with the Spanish Data Protection Agency (AEPD):"
+    }
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "section1": {
+      "title": "1. Acceptance of Terms",
+      "content": "By accessing and using the Baura application and this website, you accept these terms of use. If you do not agree with any part of these terms, please do not use our services."
+    },
+    "section2": {
+      "title": "2. Service Description",
+      "intro": "Baura is a free application that helps you discover and organize fragrances. The service includes:",
+      "item1": "Personalized perfume recommendations based on your preferences.",
+      "item2": "Management of your personal fragrance collection.",
+      "item3": "Information about olfactory families and notes.",
+      "item4": "Tools to explore the world of perfumery."
+    },
+    "section3": {
+      "title": "3. Project Nature",
+      "content": "Baura is a personal project developed by an individual in Spain. <strong>It is not a company or commercial entity.</strong> The application is offered free of charge and non-profit, as a tool for perfumery enthusiasts."
+    },
+    "section4": {
+      "title": "4. Permitted Use",
+      "intro": "You agree to use Baura responsibly and legally. The following is prohibited:",
+      "item1": "Using the service for illegal or unauthorized purposes.",
+      "item2": "Attempting to access unauthorized systems or data.",
+      "item3": "Copying, modifying or distributing content without authorization.",
+      "item4": "Introducing viruses, malware or malicious code.",
+      "item5": "Interfering with the normal operation of the service."
+    },
+    "section5": {
+      "title": "5. Content and Recommendations",
+      "paragraph1": "Fragrance recommendations are automatically generated based on your preferences and algorithms. <strong>They are indicative and do not constitute professional advice.</strong>",
+      "paragraph2": "Information about perfumes (notes, families, etc.) is collected from public sources and may contain inaccuracies. We do not guarantee the complete accuracy of this data."
+    },
+    "section6": {
+      "title": "6. Intellectual Property",
+      "paragraph1": "The names, logos and perfume brands mentioned in the application belong to their respective owners. Baura has no affiliation with any perfume brand.",
+      "paragraph2": "The design, code and original content of Baura are protected by copyright."
+    },
+    "section7": {
+      "title": "7. Limitation of Liability",
+      "intro": "<strong>The application is provided \"as is\" and \"as available\"</strong>, without warranties of any kind, express or implied.",
+      "listIntro": "To the maximum extent permitted by law, we shall not be liable for:",
+      "item1": "Direct, indirect, incidental or consequential damages arising from the use of the app.",
+      "item2": "Loss of data or information stored in the application.",
+      "item3": "Service interruptions or technical errors.",
+      "item4": "Purchase decisions based on the app's recommendations.",
+      "item5": "Allergic or adverse reactions to recommended fragrances."
+    },
+    "section8": {
+      "title": "8. Service Availability",
+      "content": "We strive to keep the service available, but we do not guarantee uninterrupted operation. We may modify, suspend or discontinue the service at any time without notice."
+    },
+    "section9": {
+      "title": "9. Modifications",
+      "content": "We reserve the right to modify these terms at any time. Changes will take effect after publication. Continued use of the service after changes implies acceptance of the new terms."
+    },
+    "section10": {
+      "title": "10. Applicable Law",
+      "content": "These terms are governed by Spanish law. For any dispute, the parties submit to the courts and tribunals of Spain."
+    },
+    "section11": {
+      "title": "11. Contact",
+      "content": "For any inquiries about these terms:"
+    }
+  }
+}

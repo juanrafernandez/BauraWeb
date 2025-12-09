@@ -1,7 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Apple, Play } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative w-full min-h-screen flex items-center overflow-hidden">
       {/* Gradient Background - Champagne luxury feel */}
@@ -19,14 +22,14 @@ const Hero: React.FC = () => {
           <div className="space-y-10 text-center lg:text-left order-2 lg:order-1">
             <div className="space-y-6">
               <p className="text-baura-dark/60 font-sans font-medium tracking-[0.3em] text-[11px] uppercase">
-                Bienvenido a Baura
+                {t('hero.welcome')}
               </p>
               <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-serif text-baura-dark leading-[1.1] tracking-tight">
-                Captura la <br />
-                <span className="italic font-normal text-baura-gold">Esencia</span>
+                {t('hero.title1')} <br />
+                <span className="italic font-normal text-baura-gold">{t('hero.title2')}</span>
               </h1>
               <p className="text-baura-dark/70 text-lg md:text-xl font-light leading-relaxed max-w-md mx-auto lg:mx-0">
-                Tu guía personal en el mundo de las fragancias. Descubre, explora y define tu firma olfativa única.
+                {t('hero.subtitle')}
               </p>
             </div>
 
@@ -38,8 +41,8 @@ const Hero: React.FC = () => {
               >
                 <Apple size={28} />
                 <div className="text-left">
-                  <span className="block text-[10px] uppercase tracking-wider opacity-70">Descargar en</span>
-                  <span className="block text-base font-medium -mt-0.5">App Store</span>
+                  <span className="block text-[10px] uppercase tracking-wider opacity-70">{t('hero.downloadOn')}</span>
+                  <span className="block text-base font-medium -mt-0.5">{t('hero.appStore')}</span>
                 </div>
               </a>
               <a
@@ -48,8 +51,8 @@ const Hero: React.FC = () => {
               >
                 <Play size={28} />
                 <div className="text-left">
-                  <span className="block text-[10px] uppercase tracking-wider opacity-70">Disponible en</span>
-                  <span className="block text-base font-medium -mt-0.5">Google Play</span>
+                  <span className="block text-[10px] uppercase tracking-wider opacity-70">{t('hero.availableOn')}</span>
+                  <span className="block text-base font-medium -mt-0.5">{t('hero.googlePlay')}</span>
                 </div>
               </a>
             </div>
@@ -62,7 +65,7 @@ const Hero: React.FC = () => {
             <div className="absolute left-1/2 -translate-x-[68%] sm:-translate-x-[72%] lg:-translate-x-[75%] top-1/2 -translate-y-1/2 transform -rotate-6 z-10">
               <img
                 src={`${import.meta.env.BASE_URL}assets/pantalla_profile.png`}
-                alt="Baura App - Perfil y Recomendaciones"
+                alt="Baura App - Profile"
                 className="w-[180px] sm:w-[220px] lg:w-[260px] h-auto rounded-[32px] sm:rounded-[40px] lg:rounded-[48px] shadow-2xl"
               />
             </div>
@@ -71,7 +74,7 @@ const Hero: React.FC = () => {
             <div className="absolute left-1/2 -translate-x-[32%] sm:-translate-x-[28%] lg:-translate-x-[25%] top-1/2 -translate-y-1/2 transform rotate-6 z-20">
               <img
                 src={`${import.meta.env.BASE_URL}assets/pantalla_mi_coleccion.png`}
-                alt="Baura App - Mi Colección"
+                alt="Baura App - Collection"
                 className="w-[180px] sm:w-[220px] lg:w-[260px] h-auto rounded-[32px] sm:rounded-[40px] lg:rounded-[48px] shadow-2xl"
               />
             </div>
@@ -83,7 +86,7 @@ const Hero: React.FC = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden lg:flex flex-col items-center gap-2">
-        <span className="text-baura-dark/30 text-[10px] uppercase tracking-[0.2em]">Descubre más</span>
+        <span className="text-baura-dark/30 text-[10px] uppercase tracking-[0.2em]">{t('hero.discoverMore')}</span>
         <div className="w-px h-12 bg-gradient-to-b from-baura-dark/30 to-transparent"></div>
       </div>
     </section>

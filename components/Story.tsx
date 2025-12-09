@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Story: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-32 lg:py-40 bg-white overflow-hidden relative">
       {/* Subtle decorative elements */}
@@ -11,10 +14,10 @@ const Story: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-20 lg:mb-28">
           <p className="text-baura-gold font-sans font-medium tracking-[0.3em] text-[11px] uppercase mb-6">
-            La Filosofía
+            {t('story.label')}
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-baura-dark leading-tight max-w-3xl mx-auto">
-            El aroma es el recuerdo que desafía al olvido
+            {t('story.title')}
           </h2>
         </div>
 
@@ -28,12 +31,12 @@ const Story: React.FC = () => {
               <div className="relative pl-8 border-l-2 border-baura-gold/30">
                 <span className="text-[120px] md:text-[160px] font-serif text-baura-dark/5 absolute -top-8 -left-4 select-none pointer-events-none">B</span>
                 <div className="relative z-10">
-                  <h3 className="text-5xl md:text-6xl font-serif text-baura-dark mb-4">Ba</h3>
+                  <h3 className="text-5xl md:text-6xl font-serif text-baura-dark mb-4">{t('story.ba.title')}</h3>
                   <p className="text-baura-gold font-sans font-medium tracking-[0.25em] text-[10px] uppercase mb-3">
-                    Egipcio Antiguo · El Alma
+                    {t('story.ba.origin')}
                   </p>
                   <p className="text-baura-text-secondary font-light text-base leading-relaxed max-w-sm">
-                    La parte del espíritu que viaja entre mundos, representando la esencia única e irrepetible de cada individuo.
+                    {t('story.ba.description')}
                   </p>
                 </div>
               </div>
@@ -49,12 +52,12 @@ const Story: React.FC = () => {
               <div className="relative pl-8 border-l-2 border-baura-gold/30">
                 <span className="text-[120px] md:text-[160px] font-serif text-baura-dark/5 absolute -top-8 -left-4 select-none pointer-events-none">A</span>
                 <div className="relative z-10">
-                  <h3 className="text-5xl md:text-6xl font-serif text-baura-dark mb-4">Aura</h3>
+                  <h3 className="text-5xl md:text-6xl font-serif text-baura-dark mb-4">{t('story.aura.title')}</h3>
                   <p className="text-baura-gold font-sans font-medium tracking-[0.25em] text-[10px] uppercase mb-3">
-                    Latín · La Brisa
+                    {t('story.aura.origin')}
                   </p>
                   <p className="text-baura-text-secondary font-light text-base leading-relaxed max-w-sm">
-                    La atmósfera distintiva que emana de una persona, su energía invisible que deja huella en quienes la perciben.
+                    {t('story.aura.description')}
                   </p>
                 </div>
               </div>
@@ -65,20 +68,20 @@ const Story: React.FC = () => {
           <div className="lg:pl-8">
             <div className="space-y-8 text-baura-text-secondary font-light text-lg leading-relaxed">
               <p>
-                Para los antiguos egipcios, las fragancias eran vehículos sagrados para el viaje al más allá. Creían que el aroma tenía el poder de trascender el reino físico.
+                {t('story.paragraph1')}
               </p>
               <p>
-                <span className="text-baura-dark font-medium">Baura</span> nació de esta verdad atemporal: la fragancia es el arquitecto de la memoria. Un aroma familiar puede transportarte instantáneamente a un momento, lugar o persona específica.
+                <span className="text-baura-dark font-medium">Baura</span> {t('story.paragraph2')}
               </p>
               <p>
-                Nuestra misión es ayudarte a definir esa esencia. Diseñar la firma olfativa que capture tu alma y proyecte tu energía, asegurando que permanezcas inolvidable.
+                {t('story.paragraph3')}
               </p>
             </div>
 
             {/* Quote */}
             <div className="mt-12 pt-12 border-t border-baura-dark/10">
               <blockquote className="font-serif italic text-2xl md:text-3xl text-baura-gold leading-relaxed">
-                "Define tu esencia.<br/>Vuélvete inmortal."
+                {t('story.quote')}
               </blockquote>
             </div>
           </div>
