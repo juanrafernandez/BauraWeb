@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Mail, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import Logo from './Logo';
@@ -176,8 +177,8 @@ const Contact: React.FC = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-white/30">
           <p>&copy; {new Date().getFullYear()} Baura. Todos los derechos reservados.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white/60 transition-colors">Privacidad</a>
-            <a href="#" className="hover:text-white/60 transition-colors">Términos</a>
+            <Link to="/privacidad" className="hover:text-white/60 transition-colors">Privacidad</Link>
+            <Link to="/terminos" className="hover:text-white/60 transition-colors">Términos</Link>
           </div>
         </div>
 
