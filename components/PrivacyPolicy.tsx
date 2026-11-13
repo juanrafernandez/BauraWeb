@@ -6,13 +6,17 @@ import Logo from './Logo';
 const PrivacyPolicy: React.FC = () => {
   const { t, i18n } = useTranslation();
 
+  // Fecha de la última revisión del texto (no la de hoy): cambiarla al modificar la política
+  const lastUpdated = new Date('2026-11-14T12:00:00');
+  const list = (key: string) => t(key, { returnObjects: true }) as string[];
+
   const getLocalizedDate = () => {
     const locales: { [key: string]: string } = {
       es: 'es-ES',
       en: 'en-US',
       fr: 'fr-FR'
     };
-    return new Date().toLocaleDateString(locales[i18n.language] || 'es-ES', {
+    return lastUpdated.toLocaleDateString(locales[i18n.language] || 'es-ES', {
       day: 'numeric',
       month: 'long',
       year: 'numeric'
@@ -51,20 +55,22 @@ const PrivacyPolicy: React.FC = () => {
             <h2 className="text-2xl font-serif text-baura-dark mb-4">{t('privacy.section2.title')}</h2>
             <p>{t('privacy.section2.intro')}</p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
-              <li dangerouslySetInnerHTML={{ __html: t('privacy.section2.item1') }} />
-              <li dangerouslySetInnerHTML={{ __html: t('privacy.section2.item2') }} />
-              <li dangerouslySetInnerHTML={{ __html: t('privacy.section2.item3') }} />
+              {list('privacy.section2.items').map((item) => (
+                <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
+              ))}
             </ul>
+            <p className="mt-4">{t('privacy.section2.community')}</p>
+            <p className="mt-4">{t('privacy.section2.noTracking')}</p>
+            <p className="mt-4">{t('privacy.section2.camera')}</p>
           </section>
 
           <section className="mb-10">
             <h2 className="text-2xl font-serif text-baura-dark mb-4">{t('privacy.section3.title')}</h2>
             <p>{t('privacy.section3.intro')}</p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
-              <li>{t('privacy.section3.item1')}</li>
-              <li>{t('privacy.section3.item2')}</li>
-              <li>{t('privacy.section3.item3')}</li>
-              <li>{t('privacy.section3.item4')}</li>
+              {list('privacy.section3.items').map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </section>
 
@@ -82,9 +88,11 @@ const PrivacyPolicy: React.FC = () => {
             <h2 className="text-2xl font-serif text-baura-dark mb-4">{t('privacy.section6.title')}</h2>
             <p dangerouslySetInnerHTML={{ __html: t('privacy.section6.intro') }} />
             <ul className="list-disc pl-6 mt-4 space-y-2">
-              <li>{t('privacy.section6.item1')}</li>
-              <li>{t('privacy.section6.item2')}</li>
+              {list('privacy.section6.items').map((item) => (
+                <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
+              ))}
             </ul>
+            <p className="mt-4">{t('privacy.section6.transfers')}</p>
           </section>
 
           <section className="mb-10">
@@ -103,6 +111,7 @@ const PrivacyPolicy: React.FC = () => {
               <a href="mailto:business@baura.app" className="text-baura-gold hover:underline"> business@baura.app</a>.
               {' '}{t('privacy.section7.responseTime')}
             </p>
+            <p className="mt-4" dangerouslySetInnerHTML={{ __html: t('privacy.section7.inApp') }} />
           </section>
 
           <section className="mb-10">

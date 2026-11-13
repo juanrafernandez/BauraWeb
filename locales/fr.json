@@ -180,32 +180,50 @@
     },
     "section2": {
       "title": "2. Données que nous collectons",
-      "intro": "À travers ce site web et l'application Baura, nous pouvons collecter :",
-      "item1": "<strong>Données de contact :</strong> Nom et email lorsque vous nous écrivez via le formulaire de contact.",
-      "item2": "<strong>Données d'utilisation de l'app :</strong> Préférences olfactives, collection de parfums et évaluations que vous entrez volontairement dans l'application.",
-      "item3": "<strong>Données techniques :</strong> Informations anonymes sur l'appareil et l'utilisation de l'application pour améliorer le service."
+      "intro": "Par le biais de ce site web et de l'application Baura, nous traitons les données suivantes :",
+      "items": [
+        "<strong>Formulaire de contact du site :</strong> votre nom, votre e-mail et le message que vous nous envoyez.",
+        "<strong>Compte de l'application :</strong> votre e-mail, votre nom et un identifiant d'utilisateur. Si vous vous connectez avec Apple ou Google, nous recevons l'e-mail et le nom que ces services nous transmettent.",
+        "<strong>Contenu que vous créez dans l'application :</strong> les parfums que vous avez essayés, vos notes et commentaires, vos avis sur la tenue et le sillage, votre liste d'envies, vos profils olfactifs (avec vos réponses au test) et vos votes sur les parfums qui se ressemblent.",
+        "<strong>Rapports de plantage :</strong> si l'application se ferme de manière inattendue, un rapport technique est envoyé (modèle de l'appareil, versions du système et de l'application, et endroit du code où le plantage s'est produit). Il ne contient ni votre nom ni votre e-mail et n'est pas associé à votre compte.",
+        "<strong>Vérification de l'application :</strong> un contrôle que les requêtes proviennent d'une copie authentique de Baura, pour protéger le service contre les abus."
+      ],
+      "community": "Vos notes, vos avis sur la tenue et le sillage et vos votes de similarité s'ajoutent à ceux des autres utilisateurs pour calculer la note et les données de la communauté affichées pour chaque parfum. Tout le monde peut voir ces données agrégées, mais elles ne montrent jamais qui a voté ni ce que chaque personne a voté. Vos commentaires personnels, votre liste d'envies et vos profils ne sont visibles que par vous.",
+      "noTracking": "Ni l'application ni ce site n'incluent de publicité ou d'analyse comportementale, et nous ne vous suivons pas sur les applications ou sites de tiers.",
+      "camera": "La recherche par caméra de l'application lit le nom du parfum sur votre propre appareil : les images ne sont ni conservées ni envoyées à un serveur."
     },
     "section3": {
       "title": "3. Finalité du traitement",
       "intro": "Nous utilisons vos données pour :",
-      "item1": "Répondre à vos demandes et requêtes de contact.",
-      "item2": "Vous fournir des recommandations de fragrances personnalisées.",
-      "item3": "Améliorer l'application et l'expérience utilisateur.",
-      "item4": "Respecter les obligations légales si nécessaire."
+      "items": [
+        "Créer et gérer votre compte, et enregistrer votre collection, vos profils et vos notes.",
+        "Vous proposer des recommandations de parfums personnalisées.",
+        "Calculer les données agrégées de la communauté affichées pour chaque parfum (note, tenue, sillage et similarités).",
+        "Vous envoyer les e-mails nécessaires à votre compte : la confirmation de votre adresse e-mail et la réinitialisation de votre mot de passe.",
+        "Détecter et corriger les plantages de l'application et la protéger contre les abus.",
+        "Répondre à vos questions et demandes de contact.",
+        "Respecter nos obligations légales lorsque c'est nécessaire."
+      ]
     },
     "section4": {
       "title": "4. Base juridique",
-      "content": "Le traitement de vos données est basé sur votre consentement lors de l'utilisation de l'application et de l'envoi de communications, ainsi que sur notre intérêt légitime à améliorer le service."
+      "content": "Nous traitons les données de votre compte et le contenu que vous créez dans l'application car ils sont nécessaires pour vous fournir le service que vous demandez en vous inscrivant (article 6.1.b du RGPD). Les rapports de plantage, la vérification de l'application et le calcul des données agrégées de la communauté reposent sur notre intérêt légitime à ce que l'application fonctionne bien, soit sûre et offre des informations utiles à tous ses utilisateurs (article 6.1.f). Les données du formulaire de contact sont traitées avec votre consentement lorsque vous nous envoyez un message (article 6.1.a)."
     },
     "section5": {
       "title": "5. Conservation des données",
-      "content": "Nous conservons vos données tant que vous maintenez un compte actif dans l'application ou tant que nécessaire pour répondre à vos demandes. Les données de contact sont supprimées 12 mois après la dernière communication."
+      "content": "Nous conservons les données de votre compte tant qu'il reste actif. Vous pouvez le supprimer à tout moment depuis l'application : votre compte, votre collection, vos profils et vos votes sont supprimés, et les données agrégées de la communauté sont recalculées sans eux. Les rapports de plantage sont conservés 90 jours au maximum. Les données de contact sont supprimées 12 mois après la dernière communication."
     },
     "section6": {
       "title": "6. Partage des données",
-      "intro": "<strong>Nous ne vendons ni ne partageons vos données personnelles avec des tiers</strong> à des fins commerciales. Nous pouvons uniquement partager des informations avec :",
-      "item1": "Fournisseurs de services techniques nécessaires au fonctionnement de l'app (hébergement, email).",
-      "item2": "Autorités publiques en cas d'obligation légale."
+      "intro": "<strong>Nous ne vendons ni ne partageons vos données personnelles avec des tiers</strong> à des fins commerciales. Elles ne sont traitées que par les acteurs suivants, pour notre compte ou en vertu d'une obligation légale :",
+      "items": [
+        "<strong>Google (Firebase et Google Cloud) :</strong> héberge les comptes et les données de l'application (Firebase Authentication et Cloud Firestore), reçoit les rapports de plantage (Firebase Crashlytics), vérifie l'application (Firebase App Check, avec Apple App Attest), envoie les e-mails du compte et sert les images des parfums (Google Cloud Storage).",
+        "<strong>Apple et Google</strong>, si vous vous connectez avec eux, selon leurs propres politiques de confidentialité.",
+        "<strong>EmailJS</strong>, qui nous transmet les messages du formulaire de contact de ce site.",
+        "<strong>GitHub Pages</strong>, qui héberge ce site.",
+        "Les autorités publiques, lorsque la loi l'exige."
+      ],
+      "transfers": "La base de données de l'application est hébergée sur des serveurs situés dans l'Union européenne (Madrid). Certains de ces prestataires peuvent traiter des données en dehors de l'Espace économique européen ; dans ce cas, les transferts sont encadrés par le cadre de protection des données UE-États-Unis ou par les clauses contractuelles types approuvées par la Commission européenne."
     },
     "section7": {
       "title": "7. Vos droits",
@@ -217,7 +235,8 @@
       "item5": "<strong>Opposition :</strong> Vous opposer au traitement de vos données.",
       "item6": "<strong>Limitation :</strong> Demander la limitation du traitement.",
       "outro": "Pour exercer ces droits, écrivez-nous à",
-      "responseTime": "Nous répondrons dans un délai maximum de 30 jours."
+      "responseTime": "Nous répondrons dans un délai maximum de 30 jours.",
+      "inApp": "Depuis l'application, vous pouvez télécharger toutes vos données (<strong>Settings → Account Management → Export My Data</strong>) et supprimer votre compte (<strong>Settings → Account Management → Delete Account</strong>)."
     },
     "section8": {
       "title": "8. Sécurité",

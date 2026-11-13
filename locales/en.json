@@ -180,32 +180,50 @@
     },
     "section2": {
       "title": "2. Data We Collect",
-      "intro": "Through this website and the Baura application, we may collect:",
-      "item1": "<strong>Contact data:</strong> Name and email when you write to us through the contact form.",
-      "item2": "<strong>App usage data:</strong> Olfactory preferences, perfume collection and ratings that you voluntarily enter in the application.",
-      "item3": "<strong>Technical data:</strong> Anonymous information about the device and application usage to improve the service."
+      "intro": "Through this website and the Baura app we process the following data:",
+      "items": [
+        "<strong>Website contact form:</strong> your name, your email and the message you send us.",
+        "<strong>App account:</strong> your email, your name and a user identifier. If you sign in with Apple or Google, we receive the email and name those services provide.",
+        "<strong>Content you create in the app:</strong> the perfumes you have tried, your ratings and notes, your longevity and sillage opinions, your wishlist, your olfactory profiles (with your test answers) and your votes on which perfumes smell alike.",
+        "<strong>Crash reports:</strong> if the app closes unexpectedly, a technical report is sent (device model, system and app versions, and where in the code the crash happened). It does not include your name or email and is not linked to your account.",
+        "<strong>App verification:</strong> a check that requests come from a genuine copy of Baura, to protect the service against abuse."
+      ],
+      "community": "Your ratings, your longevity and sillage opinions and your similarity votes are combined with those of other users to calculate the community rating and data shown for each perfume. Everyone can see these aggregated figures, but they never show who voted or what each person voted. Your personal notes, your wishlist and your profiles are visible only to you.",
+      "noTracking": "Neither the app nor this website includes advertising or behavioural analytics, and we do not track you across third-party apps or websites.",
+      "camera": "The app's camera search reads the perfume name on your own device: images are not stored or sent to any server."
     },
     "section3": {
       "title": "3. Purpose of Processing",
       "intro": "We use your data to:",
-      "item1": "Respond to your inquiries and contact requests.",
-      "item2": "Provide you with personalized fragrance recommendations.",
-      "item3": "Improve the application and user experience.",
-      "item4": "Comply with legal obligations when necessary."
+      "items": [
+        "Creating and maintaining your account, and saving your collection, profiles and ratings.",
+        "Providing personalised fragrance recommendations.",
+        "Calculating the aggregated community data shown for each perfume (rating, longevity, sillage and similarities).",
+        "Sending the emails your account needs: confirming your email address and resetting your password.",
+        "Detecting and fixing app crashes and protecting the app against abuse.",
+        "Answering your enquiries and contact requests.",
+        "Complying with legal obligations where necessary."
+      ]
     },
     "section4": {
       "title": "4. Legal Basis",
-      "content": "The processing of your data is based on your consent when using the application and sending us communications, as well as our legitimate interest in improving the service."
+      "content": "We process your account data and the content you create in the app because they are necessary to provide the service you request when you sign up (Article 6(1)(b) GDPR). Crash reports, app verification and the calculation of aggregated community data are based on our legitimate interest in the app working properly, being secure and offering useful information to all its users (Article 6(1)(f)). Contact form data is processed with your consent when you send us a message (Article 6(1)(a))."
     },
     "section5": {
       "title": "5. Data Retention",
-      "content": "We retain your data while you maintain an active account in the application or while necessary to respond to your inquiries. Contact data is deleted 12 months after the last communication."
+      "content": "We keep your account data for as long as your account is active. You can delete it at any time from the app: your account, collection, profiles and votes are deleted, and the aggregated community data is recalculated without them. Crash reports are kept for a maximum of 90 days. Contact data is deleted 12 months after the last communication."
     },
     "section6": {
       "title": "6. Data Sharing",
-      "intro": "<strong>We do not sell or share your personal data with third parties</strong> for commercial purposes. We may only share information with:",
-      "item1": "Technical service providers necessary for the app's operation (hosting, email).",
-      "item2": "Public authorities when there is a legal obligation."
+      "intro": "<strong>We do not sell or share your personal data with third parties</strong> for commercial purposes. Your data is processed only by the following, on our behalf or where required by law:",
+      "items": [
+        "<strong>Google (Firebase and Google Cloud):</strong> hosts the app's accounts and data (Firebase Authentication and Cloud Firestore), receives crash reports (Firebase Crashlytics), verifies the app (Firebase App Check, with Apple App Attest), sends account emails and serves perfume images (Google Cloud Storage).",
+        "<strong>Apple and Google</strong>, if you sign in with them, under their own privacy policies.",
+        "<strong>EmailJS</strong>, which delivers the messages from this website's contact form.",
+        "<strong>GitHub Pages</strong>, which hosts this website.",
+        "Public authorities, where required by law."
+      ],
+      "transfers": "The app's database is hosted on servers in the European Union (Madrid). Some of these providers may process data outside the European Economic Area; in that case, transfers are covered by the EU-US Data Privacy Framework or by the standard contractual clauses approved by the European Commission."
     },
     "section7": {
       "title": "7. Your Rights",
@@ -217,7 +235,8 @@
       "item5": "<strong>Objection:</strong> Object to the processing of your data.",
       "item6": "<strong>Restriction:</strong> Request the restriction of processing.",
       "outro": "To exercise these rights, write to us at",
-      "responseTime": "We will respond within a maximum of 30 days."
+      "responseTime": "We will respond within a maximum of 30 days.",
+      "inApp": "From the app itself you can download all your data (<strong>Settings → Account Management → Export My Data</strong>) and delete your account (<strong>Settings → Account Management → Delete Account</strong>)."
     },
     "section8": {
       "title": "8. Security",
