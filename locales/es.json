@@ -180,32 +180,50 @@
     },
     "section2": {
       "title": "2. Datos que recopilamos",
-      "intro": "A través de esta web y la aplicación Baura, podemos recopilar:",
-      "item1": "<strong>Datos de contacto:</strong> Nombre y email cuando nos escribes a través del formulario de contacto.",
-      "item2": "<strong>Datos de uso de la app:</strong> Preferencias olfativas, colección de perfumes y valoraciones que introduces voluntariamente en la aplicación.",
-      "item3": "<strong>Datos técnicos:</strong> Información anónima sobre el dispositivo y uso de la aplicación para mejorar el servicio."
+      "intro": "A través de esta web y de la aplicación Baura tratamos estos datos:",
+      "items": [
+        "<strong>Formulario de contacto de la web:</strong> tu nombre, tu email y el mensaje que nos envías.",
+        "<strong>Cuenta de la app:</strong> tu email, tu nombre y un identificador de usuario. Si entras con Apple o con Google, recibimos el email y el nombre que esos servicios nos facilitan.",
+        "<strong>Contenido que creas en la app:</strong> los perfumes que has probado, tus valoraciones y notas, tus opiniones de duración y estela, tu lista de deseos, tus perfiles olfativos (con las respuestas del test) y tus votos sobre qué perfumes se parecen entre sí.",
+        "<strong>Informes de fallos:</strong> si la app se cierra de forma inesperada, se envía un informe técnico (modelo de dispositivo, versiones del sistema y de la app y el punto del código donde ocurrió el fallo). No incluye tu nombre ni tu email y no se asocia a tu cuenta.",
+        "<strong>Verificación de la app:</strong> una comprobación de que las peticiones proceden de una copia auténtica de Baura, para proteger el servicio frente a abusos."
+      ],
+      "community": "Tus valoraciones, tus opiniones de duración y estela y tus votos de similitud se suman a los de otros usuarios para calcular la nota y los datos de la comunidad que muestra cada perfume. Esos datos agregados los ven todos los usuarios, pero nunca muestran quién ha votado ni qué ha votado cada persona. Tus notas personales, tu lista de deseos y tus perfiles solo los ves tú.",
+      "noTracking": "Ni la app ni esta web incluyen publicidad ni analítica de comportamiento, y no te seguimos en aplicaciones o webs de terceros.",
+      "camera": "La búsqueda por cámara de la app lee el nombre del perfume en tu propio dispositivo: las imágenes no se guardan ni se envían a ningún servidor."
     },
     "section3": {
       "title": "3. Finalidad del tratamiento",
       "intro": "Utilizamos tus datos para:",
-      "item1": "Responder a tus consultas y solicitudes de contacto.",
-      "item2": "Proporcionarte recomendaciones personalizadas de fragancias.",
-      "item3": "Mejorar la aplicación y la experiencia de usuario.",
-      "item4": "Cumplir con obligaciones legales cuando sea necesario."
+      "items": [
+        "Crear y mantener tu cuenta, y guardar tu colección, tus perfiles y tus valoraciones.",
+        "Proporcionarte recomendaciones personalizadas de fragancias.",
+        "Calcular los datos agregados de la comunidad que muestra cada perfume (nota, duración, estela y similitudes).",
+        "Enviarte los correos necesarios para tu cuenta: la confirmación de tu email y la recuperación de tu contraseña.",
+        "Detectar y corregir fallos de la aplicación y protegerla frente a abusos.",
+        "Responder a tus consultas y solicitudes de contacto.",
+        "Cumplir con obligaciones legales cuando sea necesario."
+      ]
     },
     "section4": {
       "title": "4. Base legal",
-      "content": "El tratamiento de tus datos se basa en tu consentimiento al utilizar la aplicación y enviarnos comunicaciones, así como en nuestro interés legítimo de mejorar el servicio."
+      "content": "Tratamos los datos de tu cuenta y el contenido que creas en la app porque son necesarios para prestarte el servicio que solicitas al registrarte (artículo 6.1.b del RGPD). Los informes de fallos, la verificación de la app y el cálculo de los datos agregados de la comunidad se basan en nuestro interés legítimo en que la aplicación funcione bien, sea segura y ofrezca información útil a todos sus usuarios (artículo 6.1.f). Los datos del formulario de contacto se tratan con tu consentimiento al enviarnos el mensaje (artículo 6.1.a)."
     },
     "section5": {
       "title": "5. Conservación de datos",
-      "content": "Conservamos tus datos mientras mantengas una cuenta activa en la aplicación o mientras sea necesario para responder a tus consultas. Los datos de contacto se eliminan transcurridos 12 meses desde la última comunicación."
+      "content": "Conservamos los datos de tu cuenta mientras la mantengas activa. Puedes eliminarla en cualquier momento desde la app: se borran tu cuenta, tu colección, tus perfiles y tus votos, y los datos agregados de la comunidad se recalculan sin ellos. Los informes de fallos se conservan como máximo 90 días. Los datos de contacto se eliminan 12 meses después de la última comunicación."
     },
     "section6": {
       "title": "6. Compartición de datos",
-      "intro": "<strong>No vendemos ni compartimos tus datos personales con terceros</strong> con fines comerciales. Solo podemos compartir información con:",
-      "item1": "Proveedores de servicios técnicos necesarios para el funcionamiento de la app (hosting, email).",
-      "item2": "Autoridades públicas cuando exista obligación legal."
+      "intro": "<strong>No vendemos ni compartimos tus datos personales con terceros</strong> con fines comerciales. Solo los tratan, por cuenta nuestra o por obligación legal:",
+      "items": [
+        "<strong>Google (Firebase y Google Cloud):</strong> aloja las cuentas y los datos de la app (Firebase Authentication y Cloud Firestore), recibe los informes de fallos (Firebase Crashlytics), verifica la app (Firebase App Check, con Apple App Attest), envía los correos de la cuenta y sirve las imágenes de los perfumes (Google Cloud Storage).",
+        "<strong>Apple y Google</strong>, si inicias sesión con ellos, conforme a sus propias políticas de privacidad.",
+        "<strong>EmailJS</strong>, que nos hace llegar los mensajes del formulario de contacto de esta web.",
+        "<strong>GitHub Pages</strong>, que publica esta web.",
+        "Autoridades públicas, cuando exista obligación legal."
+      ],
+      "transfers": "La base de datos de la app está en servidores de la Unión Europea (Madrid). Algunos de estos proveedores pueden tratar datos fuera del Espacio Económico Europeo; en ese caso, las transferencias se amparan en el Marco de Privacidad de Datos UE-EE. UU. o en las cláusulas contractuales tipo aprobadas por la Comisión Europea."
     },
     "section7": {
       "title": "7. Tus derechos",
@@ -217,7 +235,8 @@
       "item5": "<strong>Oposición:</strong> Oponerte al tratamiento de tus datos.",
       "item6": "<strong>Limitación:</strong> Solicitar la limitación del tratamiento.",
       "outro": "Para ejercer estos derechos, escríbenos a",
-      "responseTime": "Responderemos en un plazo máximo de 30 días."
+      "responseTime": "Responderemos en un plazo máximo de 30 días.",
+      "inApp": "Desde la propia app puedes descargar todos tus datos (<strong>Ajustes → Gestión de Cuenta → Exportar Mis Datos</strong>) y eliminar tu cuenta (<strong>Ajustes → Gestión de Cuenta → Eliminar Cuenta</strong>)."
     },
     "section8": {
       "title": "8. Seguridad",
