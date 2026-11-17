@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Apple, Play } from 'lucide-react';
+import { APP_STORE_URL } from '../constants';
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -36,7 +37,9 @@ const Hero: React.FC = () => {
             {/* App Store Buttons - Dark style */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <a
-                href="#"
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 bg-baura-dark text-white pl-5 pr-7 py-4 rounded-2xl hover:bg-baura-dark/90 transition-all duration-300 shadow-lg"
               >
                 <Apple size={28} />
@@ -45,16 +48,17 @@ const Hero: React.FC = () => {
                   <span className="block text-base font-medium -mt-0.5">{t('hero.appStore')}</span>
                 </div>
               </a>
-              <a
-                href="#"
-                className="group inline-flex items-center gap-3 bg-baura-dark text-white pl-5 pr-7 py-4 rounded-2xl hover:bg-baura-dark/90 transition-all duration-300 shadow-lg"
+              {/* Sin app de Android todavía: no es un enlace */}
+              <div
+                aria-disabled="true"
+                className="inline-flex items-center gap-3 bg-baura-dark/40 text-white pl-5 pr-7 py-4 rounded-2xl cursor-default select-none"
               >
                 <Play size={28} />
                 <div className="text-left">
-                  <span className="block text-[10px] uppercase tracking-wider opacity-70">{t('hero.availableOn')}</span>
+                  <span className="block text-[10px] uppercase tracking-wider opacity-70">{t('hero.comingSoonOn')}</span>
                   <span className="block text-base font-medium -mt-0.5">{t('hero.googlePlay')}</span>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
 

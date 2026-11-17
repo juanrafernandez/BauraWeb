@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
 import LanguageSelector from './LanguageSelector';
+import { APP_STORE_URL } from '../constants';
 
 const Navbar: React.FC = () => {
   const { t } = useTranslation();
@@ -75,7 +76,9 @@ const Navbar: React.FC = () => {
             ))}
             <LanguageSelector variant="light" />
             <a
-              href="#"
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="ml-2 px-5 py-2.5 rounded-xl text-[13px] font-medium transition-all duration-300 bg-baura-gold text-white hover:bg-baura-gold-dark"
             >
               {t('nav.download')}
@@ -110,7 +113,9 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <a
-            href="#"
+            href={APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="block w-full text-center bg-baura-gold text-white py-3 rounded-xl font-medium mt-4"
           >
             {t('nav.download')} App
